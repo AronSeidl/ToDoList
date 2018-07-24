@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link type="text/css" href="/bootstrap.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="/js/todos.js"></script>
+    </head>
+    <body>
+        <nav data-th-replace="menu :: msgmenu"></nav>
+        <div class="container">
+            <table class="table" id="todos">
+                <thead>
+                    <tr>
+                        <th>Feladat</th>
+                        <th>Hozzáadás dátuma</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="loading-row">
+                        <td colspan="2" class="text-center"><em>loading...</em></td>
+                    </tr>
+                </tbody>
+            </table>
+            Kérem adja meg a todo-t, amit szeretne felvinni a listára! <input id="todoinput" type="text" name="acttodo"><br>
+            <input type="submit" id="submittodo" class="btn btn-primary" value="Küldés">
+        </div>
+    </body>
+</html>

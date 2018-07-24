@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link type="text/css" href="/bootstrap.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="/js/helloworld.js"></script>
+    </head>
+    <body>
+        <nav data-th-replace="menu :: msgmenu"></nav>
+        <div class="container">
+
+
+            Kérem adja meg a nevét az embernek, akit üdvözölni szeretne: <input id="nameinput" type="text" name="fname"><br>
+            <input type="submit" id="submithello" class="btn btn-primary" value="Küldés">
+
+            <p id="helloText"></p>
+
+        </div>
+    </body>
+</html>

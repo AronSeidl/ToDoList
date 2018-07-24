@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link type="text/css" href="/bootstrap.css" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="navbar navbar-default bg-light" data-th-fragment="msgmenu">
+
+            <!-- Links -->
+            <ul class="nav justify-content-left">
+                <li class="nav-item">
+                    <a class="nav-link" href="/helloworld">Hello World</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/todos">ToDo</a>
+                </li>
+            </ul>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <span data-th-text="${usersname}"></span>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
